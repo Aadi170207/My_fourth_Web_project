@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>My Portfolio</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p> Hi! My name is Adity Kumari. I am on my journey of learning HTML, CSS, and JavaScript by building real projects.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+
+    <a href="projects/todo/index.html" class="project-card">
+      <img src="images/Screenshot1.png" alt="To-Do App">
+      <h3>To-Do App</h3>
+      <p>LocalStorage</p>
+    </a>
+
+    <a href="projects/product/index.html" class="project-card">
+      <img src="images/Screenshot2.png" alt="Product Listing ">
+      <h3>Product Listing</h3>
+      <p>Filter & sort products </p>
+    </a>
+
+  </div>
+</section>
+
+<section id="products">
+  <h2>Product Listing</h2>
+
+  <div class="controls">
+    <label for="categoryFilter">Category:</label>
+    <select id="categoryFilter" title="Filter products by category">
+      <option value="all">All Categories</option>
+      <option value="electronics">Electronics</option>
+      <option value="fashion">Fashion</option>
+    </select>
+
+    <label for="priceFilter">Price:</label>
+    <select id="priceFilter" title="Filter products by price">
+      <option value="all">All Prices</option>
+      <option value="low">Below ₹2000</option>
+      <option value="high">Above ₹2000</option>
+    </select>
+
+    <label for="sortOption">Sort:</label>
+    <select id="sortOption" title="Sort products by price or rating">
+      <option value="rating">Sort by Rating</option>
+      <option value="price">Sort by Price</option>
+    </select>
+  </div>
+
+  <div id="productContainer" class="product-grid"></div>
+</section>
+<section id="contacts">
+  <h2>Contact</h2>
+  <p>Email: aditykumari12611@gmail.com</p>
+</section>
+  <p>© 2026 My Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
